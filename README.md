@@ -1,9 +1,12 @@
-# Group 4 - Milestone 2 - React-Redux Project
+# React-Redux Website Project
+
+My Fork of an original class group project.
+
+Original project: Group 4 - Milestone 2 - React-Redux Project
+Group 4 developers: MartinDavis3, Tee-Coder, Zohairajweh and Joshv1782.
 
 This class assignment project seeks to implement a simple social media type web application using
 React-Redux and multiple web pages handled using React-Router.
-
-Final Version for Submission
 
 ---------------------------------------------------------------------------------------------------
 
