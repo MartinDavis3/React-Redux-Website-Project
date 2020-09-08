@@ -12,7 +12,7 @@ const initialState: UserState = {
       password: 'pass1',
       userPictureName: 'matthew.png',
       userBackgroundPictureName: 'default',
-      userInformation: 'I am a full-stack software developer',
+      userInformation: 'I am user 1',
       userInbox: []
     },
     {
@@ -21,7 +21,7 @@ const initialState: UserState = {
       password: 'pass2',
       userPictureName: 'steve.jpg',
       userBackgroundPictureName: 'default',
-      userInformation: ' iam  a pilot ',
+      userInformation: 'I am user 2',
       userInbox: []
     },
     {
@@ -30,7 +30,7 @@ const initialState: UserState = {
       password: 'pass3',
       userPictureName: 'molly.png',
       userBackgroundPictureName: 'default',
-      userInformation: 'i am electrical engineering ',
+      userInformation: 'I am user 3',
       userInbox: []
     },
     {
@@ -39,7 +39,7 @@ const initialState: UserState = {
       password: 'pass4',
       userPictureName: 'jenny.jpg',
       userBackgroundPictureName: 'default',
-      userInformation: ' i am police officer',
+      userInformation: 'I am user 4',
       userInbox: []
     },
     {
@@ -48,16 +48,16 @@ const initialState: UserState = {
       password: 'pass5',
       userPictureName: 'daniel.jpg',
       userBackgroundPictureName: 'default',
-      userInformation: 'iam a singer ',
+      userInformation: 'I am user 5',
       userInbox: []
     },
     {
       userId: 6,
       username: 'user6',
       password: 'pass6',
-      userPictureName: 'default',
+      userPictureName: 'elliot.jpg',
       userBackgroundPictureName: 'default',
-      userInformation: 'My favourite meal is haggis, tatties and neeps',
+      userInformation: 'I am user 6',
       userInbox: []
     }
   ],

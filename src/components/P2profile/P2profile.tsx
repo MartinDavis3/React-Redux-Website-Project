@@ -33,32 +33,40 @@ export class P2profile extends Component<IP2profileProps, IP2profileState> {
   }
 
   private changeDisplayedUser() {
+    console.log('changing displayed user')
     if ( this.props.loggedInUserId !== 0 ) {
       let newDisplayedUser = this.state.displayedUser;
       newDisplayedUser++;
-      if ( newDisplayedUser > this.props.userList.length ) {
-        newDisplayedUser = 1
+      if ( newDisplayedUser > this.props.userList.length - 1 ) {
+        newDisplayedUser = 0
       }
-      this.setState( { displayedUser: newDisplayedUser } );
+      console.log('new user (calculated): ' + newDisplayedUser)
+      this.setState( (state) => ({ displayedUser: newDisplayedUser }) );
     } else {
       this.setState( { displayedUser: 0 } );
     }
+    console.log('new user (state): ' + this.state.displayedUser)
   }
 
   public render() {
     let { match: { params } } = this.props;
-    return (
-      <Fragment>
-        Page 2. User Profiles - User {params.id}
-        <Button content='Display Next User'
-          as={Link} 
-          to={`/P2profile/${this.state.displayedUser}`} 
-          onClick={() => this.changeDisplayedUser()}
-        />
-        <TextInput serving = 'userInformation' rows='5' displayingUserId={params.id} ></TextInput>
-        <ProfileCard/>
-      </Fragment>
-    );
+    if (this.props.loggedInUserId === 0) {
+      return (
+      <Fragment></Fragment>);
+    } else {
+      return (
+        <Fragment>
+          Page 2. User Profiles - User {params.id}
+          <Button content='Display Next User'
+            as={Link} 
+            to={`/P2profile/${this.state.displayedUser+1}`} 
+            onClick={() => this.changeDisplayedUser()} 
+          />
+          <TextInput serving = 'userInformation' rows='5' displayingUserId={params.id} ></TextInput>
+          <ProfileCard displayingUserId={params.id}/>
+        </Fragment>
+      );
+    }
   }
 }
 
