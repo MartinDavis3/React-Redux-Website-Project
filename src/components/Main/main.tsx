@@ -13,24 +13,16 @@ export default class Main extends React.Component<IMainProps> {
       <React.Fragment>
         <Grid>
           <Grid.Row columns={3}>
-
-          <Grid.Column>
-          <Login />
-
-          </Grid.Column>
-
-          <Grid.Column>
-          <Mainheader/>
-
-          </Grid.Column>
-
-          <Grid.Column>
-          <Register />
-
-          </Grid.Column>
-
+            <Grid.Column>
+              <Login />
+            </Grid.Column>
+            <Grid.Column>
+              <Mainheader/>
+            </Grid.Column>
+            <Grid.Column>
+              <Register />
+            </Grid.Column>
           </Grid.Row>
-
         </Grid>
       </React.Fragment>
     );

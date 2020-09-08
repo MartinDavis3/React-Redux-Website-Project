@@ -58,7 +58,7 @@ export class Comments extends React.Component<ICommentsProps> {
                   <Icon name="like" />
                   Like
                 </Button>
-
+                  {/* Blank line required for formatting display */}
                 <Button icon>
                   <Icon name="comment outline" />
                   Comment
@@ -84,7 +84,7 @@ export class Comments extends React.Component<ICommentsProps> {
               </Comment.Group>
             </Segment>
           </Grid.Column>
-          ​
+          {/* Blank line required for formatting display */}                  ​
         </Segment>
       </Grid>
     );
@@ -100,6 +100,3 @@ const mapStateToProps = (state: RootState) => {
 
 // Connect Redux and React using our values and "view!"
 export default connect(mapStateToProps, { saveComment, incrementLikeCounter })(Comments);
-
-
-//Add comment to try and allow "merging" of branch on github - can be removed after.

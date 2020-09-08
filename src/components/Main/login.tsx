@@ -57,29 +57,26 @@ export class Login extends React.Component<ILoginProps, ILoginState> {
       <React.Fragment>
         <Grid columns="equal">
           <Grid.Row>
-
           </Grid.Row>
-          <Grid.Column width={2}></Grid.Column>
-  <Grid.Column width={9}>
-
-  <Header as='h3' color='blue' textAlign='left'>
-Please enter you user name and password to login</Header>
-<Form size='large'>
-            <Input fluid icon="user" iconPosition="left" placeholder="Username"
-              onChange={this.onUserFieldChange} />
-            <Input fluid icon="lock" iconPosition="left" placeholder="Password" type="password"
-              onChange={this.onPassFieldChange}/>
-            <Button color="facebook" fluid size="large"
-             onClick = {() => this.onClickSubmitButton()}
-            >
-              
-              Login
-            </Button>
+          <Grid.Column width={2}>
+          </Grid.Column>
+          <Grid.Column width={9}>
+            <Header as='h3' color='blue' textAlign='left'>
+              Please enter you user name and password to login
+            </Header>
+            <Form size='large'>
+              <Input fluid icon="user" iconPosition="left" placeholder="Username"
+                onChange={this.onUserFieldChange} />
+              <Input fluid icon="lock" iconPosition="left" placeholder="Password" type="password"
+                onChange={this.onPassFieldChange}/>
+              <Button color="facebook" fluid size="large"
+                onClick = {() => this.onClickSubmitButton()}>
+                Login
+              </Button>
             </Form>
-
-            </Grid.Column>
-            <Grid.Column width={1}></Grid.Column>
-
+          </Grid.Column>
+          <Grid.Column width={1}>            
+          </Grid.Column>
         </Grid>
       </React.Fragment>
     );

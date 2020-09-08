@@ -25,7 +25,7 @@ export class NewsItemsList extends React.Component<INewsItemsListProps> {
       </Segment>
     );
   }
-  }
+}
 
 const mapStateToProps = (state: RootState) => {
   return {

@@ -6,21 +6,20 @@ import { newsReducer } from "./news/reducers"
 import { messageReducer } from "./message/reducers"
 
 const rootReducer = combineReducers({
-    user: userReducer,
-    news: newsReducer,
-    imagestore: imagestoreReducer,
-    message: messageReducer
+  user: userReducer,
+  news: newsReducer,
+  imagestore: imagestoreReducer,
+  message: messageReducer
 })
 
 export type RootState = ReturnType<typeof rootReducer>;
 
 export default function configureStore() {
-    const store = createStore(
-        rootReducer,
-        composeWithDevTools(
-            applyMiddleware()
-        )
-    );
-
-    return store;
+  const store = createStore(
+    rootReducer,
+    composeWithDevTools(
+        applyMiddleware()
+    )
+  );
+  return store;
 }

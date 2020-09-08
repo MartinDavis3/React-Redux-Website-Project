@@ -7,19 +7,12 @@ export interface ImMainheaderProps {
 export default class Mainheader extends React.Component<ImMainheaderProps> {
   public render() {
     return (
-      <Grid centered columns="equal">
-        
+      <Grid centered columns="equal">        
         <Grid.Column width={1}>      
-         
-          
         </Grid.Column>
-
-
         <Grid.Column width={9}>
-          
           <Container textAlign='center'>
-          <Icon circular inverted color="blue" name="users" size="large"  />
-
+            <Icon circular inverted color="blue" name="users" size="large"  />
             <Header as='h1' color='blue' textAlign='center' size='huge'>
               Welcome to our social media website
             </Header> 
@@ -28,9 +21,7 @@ export default class Mainheader extends React.Component<ImMainheaderProps> {
             </p>
           </Container>
         </Grid.Column>
-
         <Grid.Column>      
-         
         </Grid.Column>
       </Grid> 
     );
